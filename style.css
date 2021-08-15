@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-top: 8px;
+}
+:root{
+    --red:rgba(252, 80, 80, 0.912);
+  --dark-red:rgb(216, 67, 67);
+    --green:rgb(8, 56, 37);
+    --grey:#8888887f;
+}
+
+  /* This is for all the text content */
+h1,p{
+    white-space: pre-line;
+    color: var(--green);  
+}
+.texts{
+    font-family: Poppins;
+    white-space: pre-line;
+    color: var(--green);
+}
+  /* HEADING ~ smart ideas for your... */
+.texts >h1:nth-child(1){
+    position: absolute;
+    font-size: 40px;
+    top:30%;
+    left: 7%;
+}
+  /* About HeyLead */
+.texts >p:nth-child(2){ 
+    position: absolute;
+    font-size: 18px;
+    top:57%;
+    left: 7%;
+}
+   /* Heading- what we do*/
+.texts >h1:nth-child(3){
+    position: absolute;
+    font-size: 40px;    
+    top: 130%;
+    left:12%;
+}
+/*Industries we've worked with ~ Heading*/
+.texts >h1:nth-child(4){ 
+    position: absolute;
+    font-size: 40px;                       
+    left: 14%;
+    top: 310%;
+}
+/*0ur clients ~ Heading*/
+.texts >h1:nth-child(5){
+    position: absolute;
+    font-size: 40px;                       
+    left: 14%;
+    top: 370%;
+}
+/*0ur Tea, ~ Heading*/
+.texts >h1:nth-child(6){
+    position: absolute;
+    font-size: 40px;                       
+    left: 14%;
+    bottom: -340%;
+}
+/*LATEST BLOGS ~ Heading*/
+.texts >h1:nth-child(7){
+    position: absolute;
+    font-size: 40px;                       
+    left: 14%;
+    bottom: -495%;
+}
+ /*SUBSCIRBETO GET... ~ Heading*/
+#texts8{
+    font-family:poppins ;
+    font-size: 40px;                       
+    left: 33%;
+    bottom:-650%;
+    text-align: center;
+    white-space: pre-line;
+    position: absolute;
+    color: var(--green);
+}
+/*RECOMMENDATION BELWO SUBSCRIBE...*/
+#texts9{
+    font-family:poppins ;
+    font-size: 15px;                       
+    left: 33%;
+    bottom:-658%;
+    text-align: center;
+    white-space: pre-line;
+    position: absolute;
+    color: var(--green);
+}
+h1 span{
+    text-decoration: underline;
+    text-decoration-color:var(--red) ;
+}
+
+ /* Navigativon Bar */
+ul{                                                                
+    display: flex;
+    flex-direction: row;
+    text-align: right; 
+    justify-content: center;
+    margin-right:-20%;
+    overflow-x: hidden;
+    
+}
+ /*HeyLead text*/
+.heylead{                                                
+    font-family: Saira Condensed;
+    position: absolute;
+    color: var(--green);
+    font-size: 35px;
+    top: 18px;
+    left:60px;
+    
+}
+ /*HeyLead icon*/
+.heylead img{                                            
+    height: 35px;
+    width: 35px;
+    margin-left: 0;
+    
+}
+/*Navigation Menu*/
+li a{                                                      
+    opacity: 0.6;
+    font-family: teko;
+    color: var(--green);
+    text-decoration: none;
+    font-size: 25px;
+    margin-right:80px;
+    margin-left:20px;
+    letter-spacing: 1px;
+    
+    
+}
+li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-color: var(--red);
+}
+
+/*LOGIN BUTTON*/
+#login-btn{                                                  
+    font-family: teko;
+    font-size: 25px;
+    color: white;
+    background-color: var(--red);
+    padding: 5px 50px 5px 50px;
+    border: none;
+    border-radius:25px ;
+    position: absolute;
+    top:25px;
+    right: 20px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+#login-btn:hover{
+    background-color: var(--dark-red);  
+}
+#login-btn:active{
+    font-size: 23px;
+}
+#login-btn >img{
+    position: absolute;
+    top:8%;
+    left: 25px;
+    width: 20px;
+}
+ /*STARTED BUTTON*/
+#started-btn{                                            
+    font-family: teko;
+    font-size: 25px;
+    color: white;
+    background-color: var(--red);
+    padding: 5px 40px 5px 40px;
+    border: none;
+    border-radius:25px ;
+    position: absolute;
+    z-index:1;
+    top:78%;
+    left:8%;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+#started-btn:hover{
+    background-color: var(--dark-red);  
+}
+#started-btn:active{
+    font-size: 23px;
+}
+ /*  This is for all background images */
+#background{                                       
+display: flex;
+object-fit: contain;
+}
+/*BACKGROUND IMAGE 1*/
+#background >img:nth-child(1){                               
+    height: 800px;
+    width: 100%;
+    top:10%;
+    z-index: -1;
+    position: absolute;
+}
+/*Man with Hand sign*/
+#background >img:nth-child(2){                               
+    position: absolute;
+    top: 15%;
+    right: 13%;
+    width: 34%;
+} 
+/*BACKGROUND IMAGE 2 with pink area*/
+#background >img:nth-child(3){                               
+   position: absolute;
+   height: 800px;
+    width: 100%;
+    top: 125%;
+}
+/*BACKGROUND IMAGE 3*/
+#background >img:nth-child(4){                               
+    position: absolute;
+    height: 20%;
+    width: 8%;
+    right: 0;
+    bottom: -230%;
+ }
+  /*BACKGROUND IMAGE 4 with pink area*/
+ #background >img:nth-child(5){                              
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    bottom: -430%;
+ }
+ /*BACKGROUND IMAGE 5 object chips*/
+ #background >img:nth-child(6){                               
+    position: absolute;
+    height: 700px;
+    width: 90%;
+    left:5%;
+    bottom: -690%;
+ }
+ /*Sponsors Bar behind the man with hand sign*/
+.sponsor{                                                   
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    padding: 10px 25px 10px 25px;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow:  -2px 13px 10px rgba(128, 128, 128, 0.313);
+    height: 20%;
+    width: 60%;
+    right: -30px;
+    top: 95%;
+}
+  /*Sponsors Image behind the man with hand sign*/
+.sponsor >img{                                             
+    margin-top: 30px;
+    height: 55%;
+    width: 20%;
+    justify-content: space-between;
+    opacity: 0.6;
+    transition-duration: 0.75;
+}
+.sponsor >img:hover{
+    opacity: 1;
+}
+
+.cards >div{                                              
+    width: 25%;
+    height: 45%;
+    background-color: white;
+    right: 30px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 20px 2px var(--grey);
+    transition-property: all;
+    transform-origin:center;
+    transition-duration: 1.8s;
+}
+.cards >div:hover{
+    width: 23%;
+    height: 43%;
+}
+
+.cards >div:nth-child(1){
+    position: absolute;
+    right: 3%;
+    bottom: -80%;
+}
+.cards >div:nth-child(2){
+    position: absolute;
+    right: 3%;
+    bottom: -135%;
+}
+.cards >div:nth-child(3){
+    position: absolute;
+    right: 3%;
+    bottom: -190%;
+}
+.cards >div:nth-child(4){
+    position: absolute;
+    right: 30%;
+    bottom: -115%;
+}
+.cards >div:nth-child(5){
+    position: absolute;
+    right: 30%;
+    bottom: -170%;
+}
+.cards >div:nth-child(6){
+    position: absolute;
+    right: 57%;
+    bottom: -150%;
+}
+.cards >div img{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 20%;
+}
+.cards >div h1{
+    font-family:Poppins ;
+    font-size: 15px;
+    position: absolute;
+    color: var(--green);
+    left: 10%;
+    top: 40%;
+}
+.cards >div:nth-child(3) h1{
+    left:14%;
+}
+.cards >div:nth-child(5) h1{
+    left:12%;
+}
+.cards >div p{
+    position: absolute;
+    font-family: poppins;
+    font-size: 13px;
+    white-space: pre-line;
+    left: 10%;
+    top:55%;
+}
+.cards >div:nth-child(1) p{
+    top: 49%;
+}
+.cards >div:nth-child(3) p{
+    top:49%;
+    left:14%;
+}
+.cards >div:nth-child(5) p{
+    top:49%;
+    left:12%;
+}
+.gg-arrow-right{
+    position: absolute;
+    top:75%;
+    left:10%;
+    text-decoration-color: black;
+    
+}
+
+.cards >div:nth-child(1) i{
+    top: 68%;
+}
+.cards >div:nth-child(3) i{
+    top:73%;
+    left:14%;
+}
+.cards >div:nth-child(5) i{
+    top:68%;
+    left:12%;
+}
+
+
+
+/*INDUSTRIES WE'VE WORKED WITH*/
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    left: 0%;
+    top: 340%;
+    
+}
+.circle {
+  font-family: poppins;
+  position: absolute;
+  overflow: hidden;
+  width: 3.8%;
+  height: 8%;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 3px 5px 10px var(--grey);
+  transition-property: width height;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-out;
+  font-size: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.circle:hover {
+  background-color: white;
+  width: 17%;
+  height: 12%;
+  border-radius: 15px;
+  font-size: 8px;
+  opacity: 1;
+}
+.circle h1 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+.circle img {
+  position: absolute;
+  z-index: 5;
+  left: 6px;
+  transition-duration: 1s;
+}
+
+/*ICONS ~ INDUSTRIES*/
+
+/*CIRCLE 1*/
+.container div:nth-child(1) img{
+    width: 50px;
+}
+.container div:nth-child(1):hover img{
+    width: 30%;
+}
+
+/*CIRCLE 2*/
+.container div:nth-child(2) img{
+    width: 45px;
+}
+.container div:nth-child(2):hover img{
+    width: 28%;
+}
+
+/*CIRCLE 3*/
+.container div:nth-child(3) img{
+    left: 8px;
+    width: 43px;
+}
+.container div:nth-child(3):hover img{
+    width: 28%;
+}
+
+/*CIRCLE 4*/
+.container div:nth-child(4) img{
+    left: 10px;
+    width: 40px;
+}
+.container div:nth-child(4):hover img{
+    width: 27%;
+}
+
+/*CIRCLES ~ ALIGN*/
+
+.container >div:nth-child(1){
+    left: 13%;
+}
+.container >div:nth-child(2){
+    left: 35%;
+}
+.container >div:nth-child(3){
+    left: 57%;
+}
+.container >div:nth-child(4){
+    left: 78%;
+}
+
+
+
+/*OUR CLIENTS*/
+
+.container2 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0%;
+    top: 390%;
+}
+.circle2{
+    position: absolute;
+    width: 3.8%;
+    height: 8%;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 3px 5px 10px var(--grey);
+    transition-property: width,height;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
+    overflow: hidden;
+    
+  }
+  .circle2 img {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    z-index: -1;
+    transition-property: z-index;
+    transition-duration: 0ms;
+    
+  }
+  .circle2:hover {
+    background-color: white;
+    width: 17%;
+    height: 12%;
+    border-radius: 15px;
+    font-size: 8px;
+  }
+.circle2:hover > img {
+  width: 80%;
+  z-index: 1; 
+}
+
+/*LOGO  CLIENT*/
+.container2>div:nth-child(1) img:nth-child(1)
+{
+    top: -2px;
+    z-index: 2;
+    width: 50px;
+    opacity: 1;
+    transition-duration: 5ms;
+}
+.container2>div:nth-child(1):hover img:nth-child(1){
+   width: 0;
+}
+
+.container2>div:nth-child(2) img:nth-child(1)
+{
+    top: 6px;
+    z-index: 2;
+    width: 50px;
+    opacity: 1;
+    transition-duration: 5ms;
+}
+.container2>div:nth-child(2):hover img:nth-child(1){
+   width: 0;
+}
+.container2>div:nth-child(3) img:nth-child(1)
+{
+    top: 0px;
+    z-index: 2;
+    width: 50px;
+    opacity: 1;
+    transition-duration: 5ms;
+}
+.container2>div:nth-child(3):hover img:nth-child(1){
+   width: 0;
+}
+.container2>div:nth-child(4) img:nth-child(1)
+{
+    top: -4px;
+    left: 7px;
+    z-index: 2;
+    width: 50px;
+    opacity: 1;
+    transition-duration: 5ms;
+}
+.container2>div:nth-child(4):hover img:nth-child(1){
+   width: 0;
+}
+
+/*CIRCLE ~ ALIGN*/
+.container2 >div:nth-child(1){
+    left: 13%;
+}
+.container2 >div:nth-child(2){
+    left: 35%;
+}
+.container2 >div:nth-child(3){
+    left: 57%;
+}
+.container2 >div:nth-child(4){
+    left: 78%;
+}
+
+/*OUR TEAMS ~ AVATAR*/
+
+/*MAIN CLASS*/
+.avatar-container{
+    position: absolute;
+    overflow: hidden;
+    bottom: -480%;
+    width: 100%;
+    height: 150%;
+}
+/*AVATAR IMAGES*/
+.avatar-container img{
+    margin-top: 55%;
+    border-radius: 100%;
+}
+
+/*CHILD CLASSES*/
+.avatar-chotu1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 8%;
+}
+
+.avatar-chotu2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+    right: 30%;
+}
+.avatar-chotu3{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 28%;
+    left:35%;
+}
+.avatar-chotu4{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 12%;
+    left: 10%;
+}
+
+.avatar-container h1{
+    font-family: poppins;
+    font-size:25px ;
+    text-align: center;
+}
+.avatar-container p{
+    font-family: arial;
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+/*LATEST BLOG*/
+
+.blog-container>div{
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px 2px var(--grey);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: -600%;
+    transition-property: width, height;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transform-origin:center;
+    white-space: pre-line;
+
+    
+}
+
+.blog-container> div:hover{
+   height: 95%;
+}
+
+/*BLOGS ~ cards*/
+.blog1{       
+    left:10%
+}
+.blog2{
+    
+    left:37.5%;
+}
+.blog3{
+    left:65%;
+}
+/* Image inside the blogs*/
+.blog-container img{
+    position: absolute;
+    width: 80%;
+    top:30px;
+    left: 40px ;
+    border-radius: 15px;
+    transition-duration: 0.8s;
+}
+/*h1 of blogs*/
+.blog-container h1{
+    position: absolute;
+    font-family: poppins;
+    font-size: 20px;
+    top:45%;
+    left:11%
+}
+/*p of blogs*/
+.blog-container p{
+    position: absolute;
+    font-family: poppins;
+    font-size: 15px;
+    top:58%;
+    left:11%
+}
+.blog2 p{
+    position: absolute;
+    font-family: poppins;
+    font-size: 15px;
+    top:63%;
+    left:11%;
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+}
+.blog-container>div:hover p{
+    top:60%;
+    font-size: 18px;
+}
+.blog-container>div:hover h1{
+    top:40%;
+    font-size: 24px;
+}
+.blog-container>div i{
+    position: absolute;
+    top:85%;
+}
+
+/*Subscribe*/
+
+.subscribe-bar{
+    position: absolute;
+    width:45%;
+    height: 10%;
+    bottom: -674%;
+    left: 28%;
+    z-index: 4;
+    background-color: white;
+}
+.subscribe-bar:placeholder-shown{
+    font-family: Kanit;
+    font-size:25px;
+    color: black;
+}
+input[type=Email]{
+    font-family: kanit;
+    font-size:25px;
+    color: black;
+    padding: 0 14% 0 40px;
+    box-shadow: 2px 2px 20px 2px var(--grey);
+    border: none;
+    border-radius: 50px;
+
+}
+.subscribe-btn{
+    overflow: hidden;
+    position: absolute;
+    bottom: -672.4%;
+    z-index: 4;
+    left: 59.7%;
+    border-radius: 50px;
+    background-color:var(--red);
+    border: none;
+    width: 12.5%;
+    height: 7%;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+.subscribe-btn:hover{
+    background-color:var(--dark-red);
+
+}
+.subscribe-btn h1{
+    position: absolute;
+    font-family: kanit;
+    font-size: 25px;
+    top:0;
+    left:18%;
+    transition-duration: 0.6s;
+}
+.subscribe-btn:hover h1{
+    font-size: 26px;
+    left:16%;
+}
+.subscribe-btn:active h1{
+    font-size: 28px;
+}
+
+/*Footer*/
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height:60%;
+    bottom: -755%;
+    background-color: rgb(255, 245, 247);
+}
+.heylead-footer h1{
+    font-family: saira Condensed;
+    position: absolute;
+    color: var(--green);
+    font-size: 35px;
+    left:7%;
+    top:8%;
+    padding: 30px 0 0 0;
+}
+.heylead-footer img{   
+    position: absolute;                                          
+    height: 39px;
+    width: 36px;
+    top: 15%;
+    left: 14%;
+}
+.heylead-footer p{
+    font-family: poppins;
+    font-size: 15px;
+    position: absolute;
+    left:7%;
+    top: 35%;
+}
+
+.contact-us{
+    overflow: hidden;
+    position: absolute;
+    top:10%;
+    width: 20%;
+    height: 80%;
+    right:5%;
+}
+.contact-us>p:nth-child(1){
+    position: absolute;
+    font-family: saira Condensed;
+    font-size: 30px;
+    top:30%;
+}
+.contact-us>p:nth-child(2){
+    position: absolute;
+    font-family: poppins;
+    font-size: 13px;
+    top:54%;
+}
+.contact-us>p:nth-child(3){
+    position: absolute;
+    font-family: poppins;
+    font-size: 13px;
+    top:68%
+}
+.contact-us>p:nth-child(4){
+    position: absolute;
+    font-family: poppins;
+    font-size: 13px;
+    top:82%;
+}
+.about{
+    overflow: hidden;
+    position: absolute;
+    top:10%;
+    width: 20%;
+    height: 80%;
+    right:25%;
+}
+.about>p:nth-child(1){
+    position: absolute;
+    font-family: saira Condensed;
+    font-size: 30px;
+    top:30%;
+}
+.about>p:nth-child(2){
+    position: absolute;
+    font-family: poppins;
+    font-size: 13px;
+    top:54%;
+}
+.about>p:nth-child(3){
+    position: absolute;
+    font-family: poppins;
+    font-size: 13px;
+    top:68%
+}
+.about>p:nth-child(4){
+    position: absolute;
+    font-family: poppins;
+    font-size: 13px;
+    top:82%;
+}
+.about>p:nth-child(5){
+    position: absolute;
+    font-family: poppins;
+    font-size: 13px;
+    top:82%;
+}
+footer img:nth-child(4) {
+    position: absolute;
+    left: 7%;
+    width: 2%;
+    height: 7%;
+    top:69%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+footer img:nth-child(4):hover{
+    width: 2.3%;
+    height: 8.7%;
+}
+footer img:nth-child(5) {
+    position: absolute;
+    left: 12%;
+    width: 2%;
+    height: 7%;
+    top:69%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+footer img:nth-child(5):hover{
+    width: 2.3%;
+    height: 8.7%;
+}
+footer img:nth-child(6) {
+    position: absolute;
+    left: 17%;
+    width: 2%;
+    height: 7%;
+    top:69%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+footer img:nth-child(6):hover{
+    width: 2.3%;
+    height: 8.7%;
+}
