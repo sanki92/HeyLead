@@ -214,9 +214,10 @@ object-fit: contain;
 /*Man with Hand sign*/
 #background >img:nth-child(2){                               
     position: absolute;
-    top: 15%;
-    right: 13%;
-    width: 34%;
+    top: 17%;
+    right: 8%;
+    width: 38%;
+    height: 80%;
 } 
 /*BACKGROUND IMAGE 2 with pink area*/
 #background >img:nth-child(3){                               
@@ -400,7 +401,7 @@ object-fit: contain;
   position: absolute;
   overflow: hidden;
   width: 3.8%;
-  height: 8%;
+  height: 7%;
   border-radius: 100px;
   background-color: white;
   box-shadow: 3px 5px 10px var(--grey);
@@ -428,7 +429,7 @@ object-fit: contain;
 .circle img {
   position: absolute;
   z-index: 5;
-  left: 6px;
+  left: 1px;
   transition-duration: 1s;
 }
 
@@ -436,36 +437,44 @@ object-fit: contain;
 
 /*CIRCLE 1*/
 .container div:nth-child(1) img{
-    width: 50px;
+    width: 40px;
 }
 .container div:nth-child(1):hover img{
     width: 30%;
+    transform: rotateX(360deg);
+
 }
 
 /*CIRCLE 2*/
 .container div:nth-child(2) img{
-    width: 45px;
+    width: 38px;
 }
 .container div:nth-child(2):hover img{
     width: 28%;
+    transform: rotateX(360deg);
+
 }
 
 /*CIRCLE 3*/
 .container div:nth-child(3) img{
-    left: 8px;
-    width: 43px;
+    left: 5px;
+    width: 35px;
+    
 }
 .container div:nth-child(3):hover img{
     width: 28%;
+    transform: rotateX(360deg);
+
 }
 
 /*CIRCLE 4*/
 .container div:nth-child(4) img{
-    left: 10px;
-    width: 40px;
+    left: 5px;
+    width: 35px;
 }
 .container div:nth-child(4):hover img{
     width: 27%;
+    transform: rotateX(360deg);
 }
 
 /*CIRCLES ~ ALIGN*/
