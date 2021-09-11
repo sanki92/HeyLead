@@ -1181,7 +1181,7 @@ li a:hover{
 .cards >div{                                              
     width: 20pc;
     height: 20pc;
-    left: 36px;
+    left: 38px;
     bottom: 40%;
     background-color: white;
     right: 30px;
@@ -1199,8 +1199,8 @@ li a:hover{
     }
   }
 .cards >div:hover{
-    width:30%;
-    height: 30%;
+    width:20pc;
+    height: 20pc;
 }
 
 .cards >div:nth-child(1){
