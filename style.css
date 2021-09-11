@@ -506,7 +506,7 @@ object-fit: contain;
 .circle2{
     position: absolute;
     width: 3.8%;
-    height: 8%;
+    height: 7%;
     border-radius: 100px;
     background-color: white;
     box-shadow: 3px 5px 10px var(--grey);
@@ -531,30 +531,34 @@ object-fit: contain;
     height: 12%;
     border-radius: 15px;
     font-size: 8px;
-  }
+}
 .circle2:hover > img {
-  width: 80%;
-  z-index: 1; 
+    width: 80%;
+    z-index: 1;
+  
 }
 
 /*LOGO  CLIENT*/
 .container2>div:nth-child(1) img:nth-child(1)
 {
     top: -2px;
+    left: 2px;
     z-index: 2;
-    width: 50px;
+    width: 40px;
     opacity: 1;
     transition-duration: 5ms;
 }
 .container2>div:nth-child(1):hover img:nth-child(1){
    width: 0;
+   
 }
 
 .container2>div:nth-child(2) img:nth-child(1)
 {
-    top: 6px;
+    top: 5px;
+    left: 2px;
     z-index: 2;
-    width: 50px;
+    width: 40px;
     opacity: 1;
     transition-duration: 5ms;
 }
@@ -564,8 +568,9 @@ object-fit: contain;
 .container2>div:nth-child(3) img:nth-child(1)
 {
     top: 0px;
+    left: 2px;
     z-index: 2;
-    width: 50px;
+    width: 40px;
     opacity: 1;
     transition-duration: 5ms;
 }
@@ -575,9 +580,9 @@ object-fit: contain;
 .container2>div:nth-child(4) img:nth-child(1)
 {
     top: -4px;
-    left: 7px;
+    left: 3px;
     z-index: 2;
-    width: 50px;
+    width: 40px;
     opacity: 1;
     transition-duration: 5ms;
 }
@@ -608,11 +613,22 @@ object-fit: contain;
     bottom: -480%;
     width: 100%;
     height: 150%;
+    transition-duration: 1s;
+    transition-property: all;
 }
 /*AVATAR IMAGES*/
 .avatar-container img{
     margin-top: 55%;
     border-radius: 100%;
+    transition-property: all;
+    transition-duration: 1s;
+    width: 40%;
+    opacity: 0;
+}
+.avatar-container div:hover img{
+    opacity: 1;
+    width: 100%;
+
 }
 
 /*CHILD CLASSES*/
@@ -650,6 +666,7 @@ object-fit: contain;
     font-size:25px ;
     text-align: center;
 }
+
 .avatar-container p{
     font-family: arial;
     font-size: 15px;
@@ -671,7 +688,7 @@ object-fit: contain;
     flex-direction: row;
     bottom: -600%;
     transition-property: width, height;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease-out;
     transform-origin:center;
     white-space: pre-line;
@@ -680,7 +697,7 @@ object-fit: contain;
 }
 
 .blog-container> div:hover{
-   height: 95%;
+   height: 85%;
 }
 
 /*BLOGS ~ cards*/
@@ -699,47 +716,50 @@ object-fit: contain;
     position: absolute;
     width: 80%;
     top:30px;
-    left: 40px ;
+    left: 30px ;
     border-radius: 15px;
-    transition-duration: 0.8s;
+    transition-duration: 1s;
 }
 /*h1 of blogs*/
 .blog-container h1{
     position: absolute;
     font-family: poppins;
-    font-size: 20px;
-    top:45%;
+    font-size: 18px;
+    top:35%;
     left:11%
 }
 /*p of blogs*/
 .blog-container p{
     position: absolute;
     font-family: poppins;
-    font-size: 15px;
-    top:58%;
+    font-size: 12px;
+    top:60%;
     left:11%
 }
 .blog2 p{
     position: absolute;
     font-family: poppins;
-    font-size: 15px;
-    top:63%;
+    font-size: 12px;
+    top:60%;
     left:11%;
     transition-timing-function: ease-out;
-    transition-duration: 1s;
+    
 }
 .blog-container>div:hover p{
     top:60%;
-    font-size: 18px;
+    
 }
 .blog-container>div:hover h1{
-    top:40%;
-    font-size: 24px;
+    top:35%;
+    font-weight: 900;
+    /* font-size: 24px; */
 }
 .blog-container>div i{
     position: absolute;
     top:85%;
 }
+i{color: black;}
+
 
 /*Subscribe*/
 
