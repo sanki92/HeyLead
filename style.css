@@ -982,15 +982,26 @@ footer img:nth-child(6):hover{
 }
 
 
+
+
+
+
+
+
 /*RESPONSIVENESS*/
+
+
+
+
 @media only screen and (max-width: 728px){
     
     /* HEADING ~ smart ideas for your... */
 
+    
     .texts >h1:nth-child(1) {
         position: absolute;
         font-size: 30px;
-        top:30%;
+        top:20%;
         left: 7%;
     }
 
@@ -998,10 +1009,10 @@ footer img:nth-child(6):hover{
 
   .texts >p:nth-child(2){ 
     position: absolute;
-    font-size: 14px;
+    font-size: 11px;
     white-space: normal;
-    width: 18pc;
-    top:50%;
+    width: 13pc;
+    top:40%;
     left: 7%;
   }
 
@@ -1083,5 +1094,32 @@ li a:hover{
     left:8%;
 
 }
+ /*  This is for all background images */
+
+#background{                                       
+    display: flex;
+    object-fit: cover;
+    }
+
+    /*BACKGROUND IMAGE 1*/
+
+    #background >img:nth-child(1){                               
+    height: 500px;
+    width: 100%;
+    top:10%;
+    z-index: -1;
+    position: absolute;
+}
+
+/*Man with Hand sign*/
+
+#background >img:nth-child(2){                               
+    position: absolute;
+    top: 17%;
+    right: 2%;
+    width: 40%;
+    height: 40%;
+} 
+
 
 }
