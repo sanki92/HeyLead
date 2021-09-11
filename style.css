@@ -1125,9 +1125,9 @@ li a:hover{
 
 #background >img:nth-child(3){                /*kaam baaki*/                  
     position: absolute;
-    height: 800px;
+    height: 500px;
      width: 100%;
-     top: 80%;
+     top: 75%;
 
  }
 
@@ -1135,32 +1135,102 @@ li a:hover{
 
 .sponsor{                                                   
     display: flex;
-    flex-direction: row;
+    flex-wrap: noawrap;
     position: absolute;
-    justify-content: space-between;
-    padding: 0px  10px 30px;
+    padding: 0px  15px 30px 0px;
     overflow: hidden;
     background-color: white;
     border-radius: 15px;
     box-shadow:  -2px 13px 10px rgba(128, 128, 128, 0.313);
     height: 10%;
-    width: 80%;
-    right: -30px;
+    width: 90%;
     top: 57%;
 }
 
   /*Sponsors Image behind the man with hand sign*/
 
   .sponsor >img{                                             
-    margin-top: 30px;
-    height: 55%;
+    margin-top: 20px;
+    height: 75%;
     opacity: 1;
-    width: 20%;
-    justify-content: space-between;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 15px;
 
 }
+   /* Heading- what we do*/
+   .texts >h1:nth-child(3){
+    position: absolute;
+    font-size: 30px;    
+    top: 75%;
+    left:7%;
+}
+/*WHAT WE DO - CARDS*/
+.cards{
+    margin-top: 25pc;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    z-index: 10;
+    width: auto;
+    height: auto;
+    animation-name: slideInFromLeft;
+    animation-duration: 2s;
+    
+}
+.cards >div{                                              
+    width: 20pc;
+    height: 20pc;
+    left: 36px;
+    bottom: 40%;
+    background-color: white;
+    right: 30px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 20px 2px var(--grey);
+    transition-property: none;
 
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.cards >div:hover{
+    width:30%;
+    height: 30%;
+}
 
-
-
+.cards >div:nth-child(1){
+    position: relative;
+    right: 0;
+    bottom:0;
+}
+.cards >div:nth-child(2){
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+.cards >div:nth-child(3){
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+.cards >div:nth-child(4){
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+.cards >div:nth-child(5){
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+.cards >div:nth-child(6){
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
 }
