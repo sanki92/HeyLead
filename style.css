@@ -80,8 +80,8 @@ h1,p{
 #texts8{
     font-family:poppins ;
     font-size: 40px;                       
-    left: 33%;
-    bottom:-650%;
+    left: 25%;
+    bottom:-630%;
     text-align: center;
     white-space: pre-line;
     position: absolute;
@@ -91,8 +91,8 @@ h1,p{
 #texts9{
     font-family:poppins ;
     font-size: 15px;                       
-    left: 33%;
-    bottom:-658%;
+    left: 27%;
+    bottom:-640%;
     text-align: center;
     white-space: pre-line;
     position: absolute;
@@ -803,19 +803,20 @@ input[type=Email]{
 }
 .subscribe-btn:hover{
     background-color:var(--dark-red);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.508);
 
 }
 .subscribe-btn h1{
     position: absolute;
     font-family: kanit;
-    font-size: 25px;
-    top:0;
-    left:18%;
+    font-size: 20px;
+    top:3px;
+    left:16%;
     transition-duration: 0.6s;
 }
 .subscribe-btn:hover h1{
-    font-size: 26px;
-    left:16%;
+    font-size: 23px;
+    left:9%;
 }
 .subscribe-btn:active h1{
     font-size: 28px;
@@ -829,6 +830,7 @@ input[type=Email]{
     height:60%;
     bottom: -755%;
     background-color: rgb(255, 245, 247);
+    
 }
 .heylead-footer h1{
     font-family: saira Condensed;
@@ -838,21 +840,36 @@ input[type=Email]{
     left:7%;
     top:8%;
     padding: 30px 0 0 0;
+    transition-duration: 0.5s;
+}
+.heylead-footer:hover img:nth-child(2){
+    height: 52px;
+    width: 45px;
+    top: 16%;
+    left: 20.3%;    
+    transform: rotate(360deg);
 }
 .heylead-footer img{   
     position: absolute;                                          
     height: 39px;
     width: 36px;
-    top: 15%;
-    left: 14%;
+    top: 15.2%;
+    left: 16.4%;
+    transition-duration: 0.8s;
+}
+.heylead-footer:hover h1{
+    font-size: 50px;
 }
 .heylead-footer p{
     font-family: poppins;
     font-size: 15px;
+    font-weight: bolder;
     position: absolute;
     left:7%;
     top: 35%;
+   
 }
+
 
 .contact-us{
     overflow: hidden;
@@ -878,13 +895,13 @@ input[type=Email]{
     position: absolute;
     font-family: poppins;
     font-size: 13px;
-    top:68%
+    top:65%
 }
 .contact-us>p:nth-child(4){
     position: absolute;
     font-family: poppins;
     font-size: 13px;
-    top:82%;
+    top:77%;
 }
 .about{
     overflow: hidden;
@@ -910,19 +927,19 @@ input[type=Email]{
     position: absolute;
     font-family: poppins;
     font-size: 13px;
-    top:68%
+    top:65%
 }
 .about>p:nth-child(4){
     position: absolute;
     font-family: poppins;
     font-size: 13px;
-    top:82%;
+    top:76%;
 }
 .about>p:nth-child(5){
     position: absolute;
     font-family: poppins;
     font-size: 13px;
-    top:82%;
+    top:87%;
 }
 footer img:nth-child(4) {
     position: absolute;
@@ -931,7 +948,7 @@ footer img:nth-child(4) {
     height: 7%;
     top:69%;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 footer img:nth-child(4):hover{
     width: 2.3%;
@@ -944,7 +961,7 @@ footer img:nth-child(5) {
     height: 7%;
     top:69%;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 footer img:nth-child(5):hover{
     width: 2.3%;
@@ -957,9 +974,53 @@ footer img:nth-child(6) {
     height: 7%;
     top:69%;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 footer img:nth-child(6):hover{
     width: 2.3%;
     height: 8.7%;
+}
+
+
+/*RESPONSIVENESS*/
+@media only screen and (max-width: 728px){
+    
+    /* HEADING ~ smart ideas for your... */
+
+    .texts >h1:nth-child(1) {
+        position: absolute;
+        font-size: 30px;
+        top:30%;
+        left: 7%;
+    }
+
+  /* About HeyLead */
+
+  .texts >p:nth-child(2){ 
+    position: absolute;
+    font-size: 14px;
+    white-space: normal;
+    width: 18pc;
+    top:50%;
+    left: 7%;
+  }
+
+   /* Navigativon Bar */
+
+ul{                                                                
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    text-align: right; 
+    justify-content: center;
+    margin-top: 50px;
+    margin-right:-5%;
+    overflow-x: hidden;
+    
+}
+
+
+
+
+
 }
