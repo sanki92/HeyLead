@@ -125,8 +125,8 @@ ul{
 }
  /*HeyLead icon*/
 .heylead img{                                            
-    height: 35px;
-    width: 35px;
+    height: 38px;
+    width: 33px;
     margin-left: 0;
     
 }
@@ -994,7 +994,7 @@ footer img:nth-child(6):hover{
         left: 7%;
     }
 
-  /* About HeyLead */
+  /* ABOUT HEYLEAD */
 
   .texts >p:nth-child(2){ 
     position: absolute;
@@ -1005,22 +1005,83 @@ footer img:nth-child(6):hover{
     left: 7%;
   }
 
-   /* Navigativon Bar */
+   /* NAVIGATIVON BAR */
 
 ul{                                                                
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     text-align: right; 
-    justify-content: center;
-    margin-top: 50px;
-    margin-right:-5%;
+    margin-top: 60px;
+    margin-right:5%;
+    margin-left: 5%;
     overflow-x: hidden;
-    
 }
 
+ /*HEYLEAD TEXT*/
 
+ .heylead{                                                
+    font-family: Saira Condensed;
+    position: absolute;
+    color: var(--green);
+    font-size: 35px;
+    top: -5px;
+    left:10px;
+}
 
+/*NAVIGATION MENU*/
+li a{                                                      
+    opacity: 0.6;
+    font-family: teko;
+    color: var(--green);
+    text-decoration: none;
+    font-size: 18px;
+    margin-right:27px;
+    letter-spacing: 1px;
+}
+li a:hover{
+        text-decoration: none;
+}
+/*LOGIN BUTTON*/
 
+#login-btn{                                                  
+    font-family: teko;
+    font-size: 15px;
+    color: white;
+    background-color: var(--red);
+    padding: 5px 25px 5px 25px;
+    border: none;
+    border-radius:25px ;
+    position: absolute;
+    top:30px;
+    right: 10px;
+}
+#login-btn:hover{
+    background-color: none;  
+}
+#login-btn:active{
+    font-size: 15px;
+}
+#login-btn >img{
+    position: absolute;
+    top:0%;
+    left: 45px;
+    width: 13px;
+}
+ /*STARTED BUTTON*/
+
+ #started-btn{                                            
+    font-family: teko;
+    font-size: 13px;
+    color: white;
+    background-color: var(--red);
+    padding: 5px 25px 5px 25px;
+    border: none;
+    border-radius:25px ;
+    position: absolute;
+    z-index:1;
+    top:65%;
+    left:8%;
+
+}
 
 }
