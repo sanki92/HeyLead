@@ -1174,8 +1174,6 @@ li a:hover{
     z-index: 10;
     width: auto;
     height: auto;
-    animation-name: slideInFromLeft;
-    animation-duration: 2s;
     
 }
 .cards >div{                                              
@@ -1188,13 +1186,16 @@ li a:hover{
     border-radius: 13px;
     box-shadow: 2px 2px 20px 2px var(--grey);
     transition-property: none;
+    opacity: 0;
 
 }
 @keyframes slideInFromLeft {
     0% {
+        opacity: 0;
       transform: translateX(-100%);
     }
     100% {
+        opacity: 1;
       transform: translateX(0);
     }
   }
@@ -1207,30 +1208,57 @@ li a:hover{
     position: relative;
     right: 0;
     bottom:0;
+    animation-name: slideInFromLeft;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+
 }
 .cards >div:nth-child(2){
     position: relative;
     right: 0;
     bottom: 0;
+    animation-name: slideInFromLeft;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-duration: 2s;
+
 }
 .cards >div:nth-child(3){
     position: relative;
     right: 0;
     bottom: 0;
+    animation-name: slideInFromLeft;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-duration: 2s;
 }
 .cards >div:nth-child(4){
     position: relative;
     right: 0;
-    bottom: 0;
+    bottom: 0;   
+     animation-name: slideInFromLeft;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    animation-duration: 2s;
 }
 .cards >div:nth-child(5){
     position: relative;
     right: 0;
     bottom: 0;
+    animation-name: slideInFromLeft;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    animation-duration: 2s;
 }
 .cards >div:nth-child(6){
     position: relative;
     right: 0;
     bottom: 0;
+    animation-name: slideInFromLeft;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+    animation-duration: 2s;
 }
 }
